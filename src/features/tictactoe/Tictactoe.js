@@ -28,7 +28,7 @@ export function Tictactoe() {
         if (playStyle === "computer" && turn === computer) {
             dispatch(bestMove(board, computer, playerOne, turn));
         }
-    }, [turn]);
+    }, [turn, board]);
 
     return (
         <div>
